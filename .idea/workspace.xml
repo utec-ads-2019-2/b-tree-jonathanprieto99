@@ -34,7 +34,23 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c7e6f0e-63e1-4be3-a9e2-3ef1c1b62d63" name="Default Changelist" comment="" />
+    <list default="true" id="3c7e6f0e-63e1-4be3-a9e2-3ef1c1b62d63" name="Default Changelist" comment="Files">
+      <change afterPath="$PROJECT_DIR$/btree.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btree.h" beforeDir="false" afterPath="$PROJECT_DIR$/btree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/b-tree-jonathanprieto99.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/b-tree-jonathanprieto99.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/b-tree-jonathanprieto99.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/b-tree-jonathanprieto99.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/b-tree-jonathanprieto99.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/b-tree-jonathanprieto99.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/b-tree-jonathanprieto99.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/b-tree-jonathanprieto99.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/b-tree-jonathanprieto99.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/b-tree-jonathanprieto99.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/b-tree-jonathanprieto99.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/b-tree-jonathanprieto99.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node.h" beforeDir="false" afterPath="$PROJECT_DIR$/node.h" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +75,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="SwiftSettings" />
@@ -93,6 +115,8 @@
       <option name="presentableId" value="Default" />
       <updated>1573925580523</updated>
       <workItem from="1573925583751" duration="173000" />
+      <workItem from="1573925807763" duration="8286000" />
+      <workItem from="1575030161507" duration="1182000" />
     </task>
     <task id="LOCAL-00001" summary="First Upload">
       <created>1573925714937</created>
@@ -101,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573925714937</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Files">
+      <created>1573925873480</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573925873480</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +143,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -120,6 +153,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Upload" />
+    <MESSAGE value="Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Files" />
   </component>
 </project>

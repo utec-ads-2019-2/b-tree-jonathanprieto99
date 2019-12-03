@@ -70,17 +70,47 @@ CMakeFiles/b-tree-jonathanprieto99.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/b-tree-jonathanprieto99.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/main.cpp -o CMakeFiles/b-tree-jonathanprieto99.dir/main.cpp.s
 
+CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.o: CMakeFiles/b-tree-jonathanprieto99.dir/flags.make
+CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.o: ../node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.o -c /Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/node.cpp
+
+CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/node.cpp > CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.i
+
+CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/node.cpp -o CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.s
+
+CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.o: CMakeFiles/b-tree-jonathanprieto99.dir/flags.make
+CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.o: ../btree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.o -c /Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/btree.cpp
+
+CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/btree.cpp > CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.i
+
+CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/btree.cpp -o CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.s
+
 # Object files for target b-tree-jonathanprieto99
 b__tree__jonathanprieto99_OBJECTS = \
-"CMakeFiles/b-tree-jonathanprieto99.dir/main.cpp.o"
+"CMakeFiles/b-tree-jonathanprieto99.dir/main.cpp.o" \
+"CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.o" \
+"CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.o"
 
 # External object files for target b-tree-jonathanprieto99
 b__tree__jonathanprieto99_EXTERNAL_OBJECTS =
 
 b-tree-jonathanprieto99: CMakeFiles/b-tree-jonathanprieto99.dir/main.cpp.o
+b-tree-jonathanprieto99: CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.o
+b-tree-jonathanprieto99: CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.o
 b-tree-jonathanprieto99: CMakeFiles/b-tree-jonathanprieto99.dir/build.make
 b-tree-jonathanprieto99: CMakeFiles/b-tree-jonathanprieto99.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable b-tree-jonathanprieto99"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable b-tree-jonathanprieto99"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/b-tree-jonathanprieto99.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

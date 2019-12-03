@@ -80,10 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/btree.cpp">
+			<Option target="b-tree-jonathanprieto99"/>
+		</Unit>
 		<Unit filename="/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/btree.h">
 			<Option target="b-tree-jonathanprieto99"/>
 		</Unit>
 		<Unit filename="/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/main.cpp">
+			<Option target="b-tree-jonathanprieto99"/>
+		</Unit>
+		<Unit filename="/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/node.cpp">
 			<Option target="b-tree-jonathanprieto99"/>
 		</Unit>
 		<Unit filename="/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/node.h">

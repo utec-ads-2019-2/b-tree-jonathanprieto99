@@ -123,6 +123,33 @@ b-tree-jonathanprieto99/fast:
 	$(MAKE) -f CMakeFiles/b-tree-jonathanprieto99.dir/build.make CMakeFiles/b-tree-jonathanprieto99.dir/build
 .PHONY : b-tree-jonathanprieto99/fast
 
+btree.o: btree.cpp.o
+
+.PHONY : btree.o
+
+# target to build an object file
+btree.cpp.o:
+	$(MAKE) -f CMakeFiles/b-tree-jonathanprieto99.dir/build.make CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.o
+.PHONY : btree.cpp.o
+
+btree.i: btree.cpp.i
+
+.PHONY : btree.i
+
+# target to preprocess a source file
+btree.cpp.i:
+	$(MAKE) -f CMakeFiles/b-tree-jonathanprieto99.dir/build.make CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.i
+.PHONY : btree.cpp.i
+
+btree.s: btree.cpp.s
+
+.PHONY : btree.s
+
+# target to generate assembly for a file
+btree.cpp.s:
+	$(MAKE) -f CMakeFiles/b-tree-jonathanprieto99.dir/build.make CMakeFiles/b-tree-jonathanprieto99.dir/btree.cpp.s
+.PHONY : btree.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/b-tree-jonathanprieto99.dir/build.make CMakeFiles/b-tree-jonathanprieto99.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+node.o: node.cpp.o
+
+.PHONY : node.o
+
+# target to build an object file
+node.cpp.o:
+	$(MAKE) -f CMakeFiles/b-tree-jonathanprieto99.dir/build.make CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.o
+.PHONY : node.cpp.o
+
+node.i: node.cpp.i
+
+.PHONY : node.i
+
+# target to preprocess a source file
+node.cpp.i:
+	$(MAKE) -f CMakeFiles/b-tree-jonathanprieto99.dir/build.make CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.i
+.PHONY : node.cpp.i
+
+node.s: node.cpp.s
+
+.PHONY : node.s
+
+# target to generate assembly for a file
+node.cpp.s:
+	$(MAKE) -f CMakeFiles/b-tree-jonathanprieto99.dir/build.make CMakeFiles/b-tree-jonathanprieto99.dir/node.cpp.s
+.PHONY : node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... b-tree-jonathanprieto99"
+	@echo "... btree.o"
+	@echo "... btree.i"
+	@echo "... btree.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... node.o"
+	@echo "... node.i"
+	@echo "... node.s"
 .PHONY : help
 
 
