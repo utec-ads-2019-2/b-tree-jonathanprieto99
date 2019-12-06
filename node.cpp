@@ -49,7 +49,7 @@ void Node<T>::insertbasico(int k)
             --i;
         }
         keys[i+1] = k;
-        this->actualsize = this->actualsize+1;
+        ++this->actualsize;
     }
     else{
 
