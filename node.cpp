@@ -8,13 +8,13 @@ void Node<T>::recorrer() {
     int i;
     for (i = 0; i < this->actualsize; ++i) {
         if (!this->isLeaf){
-            childs[i]->recorrer();
+            this->childs[i]->recorrer();
         }
-        cout<<" "<<keys[i];
+        cout<<" "<<this->keys[i];
     }
 
     if (!this->isLeaf){
-        childs[i]->recorrer();
+        this->childs[i]->recorrer();
     }
 }
 
@@ -26,7 +26,7 @@ Node<T>* Node<T>::buscar(int k) {
         ++i;
     }
 
-    if(keys[i]==k){
+    if(this->keys[i]==k){
         return this;
     }
 
@@ -34,7 +34,7 @@ Node<T>* Node<T>::buscar(int k) {
         return nullptr;
     }
 
-    return childs[i]->buscar(k);
+    return this->childs[i]->buscar(k);
 }
 
 template <typename T>
@@ -43,24 +43,24 @@ void Node<T>::insertbasico(int k)
     int i = this->actualsize-1;
 
     if (this->isLeaf){
-        while (i >= 0 && keys[i] > k)
+        while (i >= 0 && this->keys[i] > k)
         {
-            keys[i+1] = keys[i];
+            this->keys[i+1] = this->keys[i];
             --i;
         }
-        keys[i+1] = k;
+        this->keys[i+1] = k;
         ++this->actualsize;
     }
     else{
 
-        while (i >= 0 && keys[i] > k){
+        while (i >= 0 && this->keys[i] > k){
             --i;
         }
 
         if (this->childs[i+1]->actualsize == 2*this->size-1)
         {
             splitnode(i+1, this->childs[i+1]);
-            if (keys[i+1] < k){
+            if (this->keys[i+1] < k){
                 ++i;
             }
         }
@@ -93,10 +93,10 @@ void Node<T>::splitnode(int i, Node *y)
 
     this->childs[i+1] = z;
     for (int j = this->actualsize-1; j >= i; --j){
-        keys[j+1] = keys[j];
+        this->keys[j+1] = this->keys[j];
     }
 
-    keys[i] = y->keys[this->size-1];
+    this->keys[i] = y->keys[this->size-1];
     ++this->actualsize;
 }
 
