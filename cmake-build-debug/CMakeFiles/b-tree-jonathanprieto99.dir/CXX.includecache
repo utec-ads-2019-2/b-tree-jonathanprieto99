@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/btree.cpp
+iostream
+-
+btree.h
+/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/btree.h
+
+/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/btree.h
+iostream
+-
+node.h
+/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/node.h
+
+/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/main.cpp
+iostream
+-
+btree.h
+/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/btree.h
+
+/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/node.cpp
+iostream
+-
+node.h
+/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/node.h
+
+/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/node.h
+iostream
+-
+vector
+-
+
