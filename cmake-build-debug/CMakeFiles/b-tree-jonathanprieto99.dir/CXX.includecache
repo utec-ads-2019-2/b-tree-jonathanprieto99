@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/btree.cpp
+iostream
+-
+btree.h
+/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/btree.h
+
 /Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/btree.h
 iostream
 -
@@ -17,8 +23,6 @@ iostream
 -
 node.h
 /Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/node.h
-btree.h
-/Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/btree.h
 
 /Users/jonathanprieto/Documents/GitHub/b-tree-jonathanprieto99/node.h
 iostream

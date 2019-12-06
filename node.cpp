@@ -8,13 +8,13 @@ void Node<T>::recorrer() {
     int i;
     for (i = 0; i < this->size; ++i) {
         if (!this->isLeaf){
-            childs[i]->traverse();
+            childs[i]->recorrer();
         }
         cout<<" "<<keys[i];
     }
 
     if (!this->isLeaf){
-        childs[i]->traverse();
+        childs[i]->recorrer();
     }
 }
 
