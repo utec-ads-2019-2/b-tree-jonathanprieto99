@@ -6,19 +6,21 @@ using namespace std;
 
 int main() {
     BTree<int> arbol(3);
-    arbol.insert(10);
-    arbol.insert(20);
-    arbol.insert(5);
-    arbol.insert(6);
     arbol.insert(12);
-    arbol.insert(30);
+    arbol.insert(15);
     arbol.insert(7);
-    arbol.insert(17);
+    arbol.insert(9);
+    arbol.insert(2);
+    arbol.insert(13);
+    arbol.insert(2);
+    arbol.insert(1);
+    arbol.insert(14);
+    arbol.insert(6);
 
     cout << "Traversal del arbol: ";
     arbol.recorrer();
 
-    int k = 6;
+    int k = 2;
 
     if (arbol.buscar(k) != nullptr){
         cout <<"Existe!"<<endl;
@@ -28,7 +30,7 @@ int main() {
         cout <<"No Existe!"<<endl;
     }
 
-    k = 15;
+    k = 11;
 
     if (arbol.buscar(k) != nullptr){
         cout <<"Existe!"<<endl;

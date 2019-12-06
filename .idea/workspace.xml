@@ -44,9 +44,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3c7e6f0e-63e1-4be3-a9e2-3ef1c1b62d63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/btree.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node.h" beforeDir="false" afterPath="$PROJECT_DIR$/node.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/b-tree-jonathanprieto99.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/b-tree-jonathanprieto99.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +114,7 @@
       <workItem from="1573925583751" duration="173000" />
       <workItem from="1573925807763" duration="8286000" />
       <workItem from="1575030161507" duration="1182000" />
-      <workItem from="1575338478945" duration="23748000" />
+      <workItem from="1575338478945" duration="24403000" />
     </task>
     <task id="LOCAL-00001" summary="First Upload">
       <created>1573925714937</created>
@@ -193,7 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575647857308</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Some Changes">
+      <created>1575651744513</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1575651744514</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Cleaning">
+      <created>1575651811111</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1575651811111</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +230,7 @@
     <MESSAGE value="Files" />
     <MESSAGE value="First Upload" />
     <MESSAGE value="Some Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some Changes" />
+    <MESSAGE value="Cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaning" />
   </component>
 </project>
