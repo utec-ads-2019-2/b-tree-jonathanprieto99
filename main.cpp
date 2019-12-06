@@ -23,21 +23,21 @@ int main() {
     int k = 2;
 
     if (arbol.buscar(k) != nullptr){
-        cout <<"Existe!"<<endl;
+        cout <<"Existe: "<<k<<", en el arbol-b!"<<endl;
     }
 
     else{
-        cout <<"No Existe!"<<endl;
+        cout <<"No Existe: "<<k<<", en el arbol-b!"<<endl;
     }
 
     k = 11;
 
     if (arbol.buscar(k) != nullptr){
-        cout <<"Existe!"<<endl;
+        cout <<"Existe: "<<k<<", en el arbol-b!"<<endl;
     }
 
     else{
-        cout <<"No Existe!"<<endl;
+        cout <<"No Existe: "<<k<<", en el arbol-b!"<<endl;
     }
 
     return 0;
