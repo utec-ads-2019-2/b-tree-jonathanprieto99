@@ -7,16 +7,16 @@ template <typename T>
 void BTree<T>::insert(int value) {
     if (root == nullptr)
     {
-        root = new Node(this->degree, true);
+        root = new Node<T>(this->degree, true);
         root->keys[0] = value;
-        root->n = 1;
+        root->actualsize = 1;
     }
     else
     {
-        if (root->n == 2*-1)
+        if (root->actualsize == 2*-1)
         {
-            Node newroot = new Node(this->degree, false);
-            newroot->C[0] = root;
+            Node<T> *newroot = new Node(this->degree, false);
+            newroot->childs[0] = root;
             newroot->splitnode(0, root);
             int i = 0;
 
@@ -24,7 +24,7 @@ void BTree<T>::insert(int value) {
                 ++i;
             }
 
-            newroot->C[i]->insertbasico(value);
+            newroot->childs[i]->insertbasico(value);
             root = newroot;
         }
         else{
