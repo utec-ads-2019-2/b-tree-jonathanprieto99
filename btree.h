@@ -32,7 +32,6 @@ class BTree {
         else{
             root->buscar(k);
         }
-    return nullptr;
     }
 
 

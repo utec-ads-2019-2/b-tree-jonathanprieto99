@@ -13,7 +13,7 @@ class Node{
 public:
     unsigned int size;
     int actualsize;
-    vector<unsigned int> keys;
+    vector<int> keys;
     vector<Node<T>*> childs;
     bool isLeaf;
 
