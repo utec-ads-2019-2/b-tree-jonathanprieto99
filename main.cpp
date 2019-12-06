@@ -17,7 +17,7 @@ int main() {
     arbol.insert(14);
     arbol.insert(6);
 
-    cout << "Traversal del arbol: ";
+    cout << "Recorrido del arbol-b: ";
     arbol.recorrer();
 
     int k = 2;
