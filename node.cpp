@@ -72,7 +72,7 @@ void Node<T>::insertbasico(int k)
 template <typename T>
 void Node<T>::splitnode(int i, Node *y)
 {
-    Node *z = new Node(y->size, y->isLeaf);
+    Node<T> *z = new Node<T>(y->size, y->isLeaf);
     z->actualsize = this->size - 1;
 
     for (int j = 0; j < this->size-1; ++j){
@@ -97,6 +97,6 @@ void Node<T>::splitnode(int i, Node *y)
     }
 
     keys[i] = y->keys[this->size-1];
-    this->actualsize = this->actualsize + 1;
+    ++this->actualsize;
 }
 
