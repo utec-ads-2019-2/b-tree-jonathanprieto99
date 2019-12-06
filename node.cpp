@@ -81,7 +81,7 @@ void Node<T>::splitnode(int i, Node *y)
 
     if (!y->isLeaf){
         for (int j = 0; j < this->size; ++j){
-            z->C[j] = y->C[j+this->size];
+            z->childs[j] = y->childs[j+this->size];
         }
     }
 
