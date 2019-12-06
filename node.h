@@ -2,11 +2,13 @@
 #define NODE_H
 #include <iostream>
 #include <vector>
-#include "btree.h"
 using namespace std;
 
+class Btree;
+
 template <typename T>
-class Node: {
+class Node{
+
 private:
     unsigned int size; //Tamano del nodo
     int actualsize; //Tamano Actual del nodo
@@ -21,15 +23,14 @@ public:
         actualsize=0;
     }
 
-    void insertNonFull(int k);
+    void insertbasico(int k);
 
-    void splitChild(int i, Node *y);
+    void splitnode(int i, Node *y);
 
-    void traverse();
+    void recorrer();
 
-    Node *search(int k);
+    Node<T>* buscar(int k);
 
-    friend class BTree;
 };
 
 #endif

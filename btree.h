@@ -7,31 +7,37 @@ using namespace std;
 
 template <typename T>
 class BTree {
-    private:
-        Node<T>* root;
-        unsigned int degree;
 
     public:
-        BTree(unsigned int degree) : degree(degree), root(nullptr) {};
 
-        void traverse()
-        {
-            if (root != nullptr){
-                root->traverse();
-            }
+    Node<T> *root;
+    int degree;
+
+    explicit BTree(int _degree){
+        root = nullptr;
+        this->degree = _degree;
+    }
+
+    void recorrer(){
+        if (root != NULL){
+            root->recorrer();
+        }
+    }
+
+    Node<T>* buscar(int k){
+
+        if (root == nullptr){
+            return nullptr;
         }
 
-        Node* search(int k)
-        {
-            if (root== nullptr){
-                return nullptr;
-            }
-            else {
-                return root->search(k);
-            }
+        else{
+            root->buscar(k);
         }
+    return nullptr;
+    }
 
-        void insert(int k, T data);
+
+    void insert(int value);
 };
 
 #endif
