@@ -43,7 +43,7 @@ void Node<T>::insertbasico(int k)
     int i = this->actualsize-1;
 
     if (this->isLeaf){
-        while (i >= 0 && this->keys[i] > k)
+        while (i >= 0 and this->keys[i] > k)
         {
             this->keys[i+1] = this->keys[i];
             --i;
@@ -53,7 +53,7 @@ void Node<T>::insertbasico(int k)
     }
     else{
 
-        while (i >= 0 && this->keys[i] > k){
+        while (i >= 0 and this->keys[i] > k){
             --i;
         }
 
@@ -72,16 +72,16 @@ void Node<T>::insertbasico(int k)
 template <typename T>
 void Node<T>::splitnode(int i, Node *y)
 {
-    Node<T> *z = new Node<T>(y->size, y->isLeaf);
-    z->actualsize = this->size - 1;
+    Node<T> *temp = new Node<T>(y->size, y->isLeaf);
+    temp->actualsize = this->size - 1;
 
     for (int j = 0; j < this->size-1; ++j){
-        z->keys[j] = y->keys[j+this->size];
+        temp->keys[j] = y->keys[j+this->size];
     }
 
     if (!y->isLeaf){
         for (int j = 0; j < this->size; ++j){
-            z->childs[j] = y->childs[j+this->size];
+            temp->childs[j] = y->childs[j+this->size];
         }
     }
 
@@ -91,7 +91,7 @@ void Node<T>::splitnode(int i, Node *y)
         this->childs[j+1] = this->childs[j];
     }
 
-    this->childs[i+1] = z;
+    this->childs[i+1] = temp;
     for (int j = this->actualsize-1; j >= i; --j){
         this->keys[j+1] = this->keys[j];
     }
