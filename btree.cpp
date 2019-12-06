@@ -13,7 +13,7 @@ void BTree<T>::insert(int value) {
     }
     else
     {
-        if (root->actualsize == 2*-1)
+        if (root->actualsize == 2*this->degree-1)
         {
             Node<T> *newroot = new Node<T>(this->degree, false);
             newroot->childs[0] = root;

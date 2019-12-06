@@ -11,11 +11,11 @@ template <typename T>
 class Node{
 
 public:
-    unsigned int size; //Tamano del nodo
-    int actualsize; //Tamano Actual del nodo
-    vector<unsigned int> keys; //Vector con las llaves
-    vector<Node<T>*> childs; //Vector de punteros a los nodos hijo
-    bool isLeaf; //Es hoja o no
+    unsigned int size; //t
+    int actualsize; //n
+    vector<unsigned int> keys; //*keys
+    vector<Node<T>*> childs; //C
+    bool isLeaf; //leaf
 
 
     Node(unsigned int size, bool isLeaf) : size(size), isLeaf(isLeaf) {
@@ -26,7 +26,7 @@ public:
 
     void insertbasico(int k);
 
-    void splitnode(int i, Node *y);
+    void splitnode(int i, Node<T> *y);
 
     void recorrer();
 

@@ -6,7 +6,7 @@ using namespace std;
 template <typename T>
 void Node<T>::recorrer() {
     int i;
-    for (i = 0; i < this->size; ++i) {
+    for (i = 0; i < this->actualsize; ++i) {
         if (!this->isLeaf){
             childs[i]->recorrer();
         }
@@ -22,8 +22,8 @@ template <typename T>
 Node<T>* Node<T>::buscar(int k) {
     int i=0;
 
-    while(i< this->size and k>keys[i]){
-        i++;
+    while(i< this->actualsize and k>keys[i]){
+        ++i;
     }
 
     if(keys[i]==k){
@@ -54,14 +54,14 @@ void Node<T>::insertbasico(int k)
     else{
 
         while (i >= 0 && keys[i] > k){
-            i--;
+            --i;
         }
 
         if (this->childs[i+1]->actualsize == 2*this->size-1)
         {
             splitnode(i+1, this->childs[i+1]);
             if (keys[i+1] < k){
-                i++;
+                ++i;
             }
         }
 
