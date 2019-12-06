@@ -79,7 +79,7 @@ void Node<T>::splitnode(int i, Node *y)
         z->keys[j] = y->keys[j+this->degree];
     }
 
-    if (y->isLeaf == false){
+    if (!y->isLeaf){
         for (int j = 0; j < this->degree; ++j){
             z->C[j] = y->C[j+this->degree];
         }
