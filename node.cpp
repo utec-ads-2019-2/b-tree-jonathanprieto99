@@ -1,6 +1,6 @@
 #include <iostream>
 #include "node.h"
-
+#include "btree.h"
 using namespace std;
 
 template <typename T>
@@ -72,14 +72,14 @@ void Node<T>::insertbasico(int k)
 template <typename T>
 void Node<T>::splitnode(int i, Node *y)
 {
-    Node *z = new Node(y->t, y->leaf);
+    Node *z = new Node(y->size, y->isLeaf);
     z->n = this->degree - 1;
 
     for (int j = 0; j < this->degree-1; ++j){
         z->keys[j] = y->keys[j+this->degree];
     }
 
-    if (y->leaf == false){
+    if (y->isLeaf == false){
         for (int j = 0; j < this->degree; ++j){
             z->C[j] = y->C[j+this->degree];
         }
