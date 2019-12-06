@@ -1,6 +1,6 @@
 #include <iostream>
 #include "node.h"
-#include "btree.h"
+
 using namespace std;
 
 template <typename T>
@@ -57,7 +57,7 @@ void Node<T>::insertbasico(int k)
             i--;
         }
 
-        if (this->childs[i+1]->n == 2*this->degree-1)
+        if (this->childs[i+1]->actualsize == 2*this->size-1)
         {
             splitnode(i+1, this->childs[i+1]);
             if (keys[i+1] < k){
@@ -73,19 +73,19 @@ template <typename T>
 void Node<T>::splitnode(int i, Node *y)
 {
     Node *z = new Node(y->size, y->isLeaf);
-    z->n = this->degree - 1;
+    z->actualsize = this->size - 1;
 
-    for (int j = 0; j < this->degree-1; ++j){
-        z->keys[j] = y->keys[j+this->degree];
+    for (int j = 0; j < this->size-1; ++j){
+        z->keys[j] = y->keys[j+this->size];
     }
 
     if (!y->isLeaf){
-        for (int j = 0; j < this->degree; ++j){
-            z->C[j] = y->C[j+this->degree];
+        for (int j = 0; j < this->size; ++j){
+            z->C[j] = y->C[j+this->size];
         }
     }
 
-    y->n = this->degree - 1;
+    y->actualsize = this->size - 1;
 
     for (int j = this->actualsize; j >= i+1; --j){
         this->childs[j+1] = this->childs[j];
@@ -96,7 +96,7 @@ void Node<T>::splitnode(int i, Node *y)
         keys[j+1] = keys[j];
     }
 
-    keys[i] = y->keys[this->degree-1];
+    keys[i] = y->keys[this->size-1];
     this->actualsize = this->actualsize + 1;
 }
 

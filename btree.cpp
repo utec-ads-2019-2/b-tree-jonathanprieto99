@@ -15,7 +15,7 @@ void BTree<T>::insert(int value) {
     {
         if (root->actualsize == 2*-1)
         {
-            Node<T> *newroot = new Node(this->degree, false);
+            Node<T> *newroot = new Node<T>(this->degree, false);
             newroot->childs[0] = root;
             newroot->splitnode(0, root);
             int i = 0;
