@@ -2,9 +2,10 @@
 #define NODE_H
 #include <iostream>
 #include <vector>
+#include "btree.h"
 using namespace std;
 
-class Btree;
+//class BTree;
 
 template <typename T>
 class Node{

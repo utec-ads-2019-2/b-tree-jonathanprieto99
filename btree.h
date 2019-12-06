@@ -9,7 +9,6 @@ template <typename T>
 class BTree {
 
     public:
-
     Node<T> *root;
     int degree;
 
