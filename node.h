@@ -11,11 +11,11 @@ template <typename T>
 class Node{
 
 public:
-    unsigned int size; //t
-    int actualsize; //n
-    vector<unsigned int> keys; //*keys
-    vector<Node<T>*> childs; //C
-    bool isLeaf; //leaf
+    unsigned int size;
+    int actualsize;
+    vector<unsigned int> keys;
+    vector<Node<T>*> childs;
+    bool isLeaf;
 
 
     Node(unsigned int size, bool isLeaf) : size(size), isLeaf(isLeaf) {
