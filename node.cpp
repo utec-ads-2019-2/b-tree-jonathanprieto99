@@ -3,6 +3,8 @@
 
 using namespace std;
 
+/* Cómo vas a compilar esto? Cuando usas templates no deberías usar un .cpp */
+
 template <typename T>
 void Node<T>::recorrer() {
     int i;

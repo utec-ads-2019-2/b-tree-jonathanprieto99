@@ -30,12 +30,15 @@ class BTree {
         }
 
         else{
+            // Dónde está el retorno?
             root->buscar(k);
         }
     }
 
 
     void insert(int value);
+
+    // Falta remove y destructor
 };
 
 #endif
